@@ -17,7 +17,7 @@ header {
     background-color: rgb(43, 43, 43);   
     padding: 30px 5% 30px 5%;
 }
-nav {
+.navigator {
     
     display: flex;
     width: 100%;
@@ -46,17 +46,17 @@ nav {
 
 }
 
-nav ul {
+.navigator ul {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
 }
 
-nav ul li {
+.navigator ul li {
     padding-left: 1em;
 }
 
-nav ul li a {
+.navigator ul li a {
     text-decoration: none;
         color: white;
         padding: 10px 20px;
@@ -67,7 +67,7 @@ nav ul li a {
         transition: all 0.5s;
     }
     
-    nav ul li a:hover {
+    .navigator ul li a:hover {
         background-color: white;
         color:rgb(43, 43, 43)
     }
@@ -78,8 +78,8 @@ nav ul li a {
 .hero {
     position: relative;
     width: 100%;
-    height: 50vh; /* vh steht für "viewport height", also 100% der sichtbaren Bildschirmhöhe */
-    overflow: hidden; /* verhindert, dass das Video über den Container hinausragt */
+    height: 50vh; 
+    overflow: hidden; 
 }
 
 .hero video {
@@ -88,22 +88,22 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* sorgt dafür, dass das Video den gesamten Bereich ausfüllt, während das Seitenverhältnis beibehalten wird */
+    object-fit: cover;
 }
 
 
 /* Über mich--------------------------------------------------------------------------------------- */
 
 .circle-image {
-    width: 300px; /* Breite des Kreisausschnitts */
-    height: 300px; /* Höhe des Kreisausschnitts */
-    border-radius: 50%; /* Runder Rand erzeugt den Kreisausschnitt */
-    overflow: hidden; /* Versteckt den über den Kreisausschnitt hinausragenden Teil des Bildes */
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    overflow: hidden; 
   }
   
   .circle-image img {
-    width: 100%; /* Sorgt dafür, dass das Bild die gesamte Fläche des Kreisausschnitts ausfüllt */
-    height: auto; /* Behält das Seitenverhältnis des Bildes bei */
+    width: 100%; 
+    height: auto; 
   }
 
 .ueber-mich {
@@ -166,45 +166,31 @@ margin-top: 20px;
 }
 /* SLIDE -------------------------------------------------------------------------------------------*/
 
-.slideshow {
-   max-width: 100%;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    background-color:rgb(43, 43, 43);
-}
-
-.slide {
-    width: 100%;
-    height: 50vh; 
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 5em;
-    background-color: rgba(0, 0, 0, 0,2);
-    color: rgb(43, 43, 43);
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.prev {
-    left: 10px
-}
-
-.next {
-    right: 10px;
-}
-
-.slideshow {
+.myequipment {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 600px;
+    
 }
+.equipment h3 {
+    padding-bottom: 10px;
+}
+
+.equipment h3 ul li {
+    font-size: 400px;
+}
+
+.software h3 {
+    padding-bottom: 10px;
+}
+
+.software {
+    padding-left: 100px;
+}
+
+
+
 
 /* FOOTER -------------------------------------------------------------------------------------------*/
 
@@ -257,10 +243,57 @@ form {
 }
 
 .form-container {
-    width: 50%; /* Sie können diesen Wert an Ihre Bedürfnisse anpassen */
+    width: 50%; 
     margin: auto;
 }
 
 
 /* mywork -------------------------------------------------------------------------------------------*/
+#car-pic img {
+    max-width: 400px;
+    max-height: 200px;
+}
 
+#videos video{
+    max-width: 400px;
+    max-height: 200px;
+}
+
+
+.categorie {
+    padding: 50px 
+}
+.categorie ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.categorie ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 20px 20px 20px 20px;
+    font-size: 2em;
+    font-weight: 500;
+    border-radius: 1000px;
+    letter-spacing: 1px;
+    transition: all 0.7s;
+}
+
+.categorie ul li a:hover {
+    background-color: black;
+color: white;
+}
+
+#herz {
+    transition: all 0,5;
+}
+
+#herz:hover {
+    color: red;
+    fill:red;
+    cursor: pointer;
+}

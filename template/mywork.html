@@ -10,7 +10,7 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
   
    
 </head>
@@ -18,13 +18,13 @@
 
 <!-- HEADER----------------------------------------------------------------------------->
     <header>
-        <nav >
+        <nav class="navigator">
     
         <div class="logo-text">DOMINIK KOPSIK</div>
         <ul>
-            <li><a href="/HTML/index.html">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">My work</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mywork.html">My work</li>
+            <li><a href="contactme.html">Contact me</a></li>
             
             
             
@@ -33,39 +33,43 @@
       
 </header>
 
-<!-- Contact Formular-------------------------------------------------------------------------------->
-<div class="form-container">
 
-<form action="#" method="post">
+<!-- Kategorie-------------------------------------------------------------------------------->
 
-<label for="firstname">Vorname</label>
-<input type="text" id="firstname" name="firstname" placeholder="Ihr Vorname">
-
-<label for="lastname">Nachname</label>
-<input type="text" id="firstname" name="lastname" placeholder="Ihr Nachname">
-
-<label for="email">E-Mail</label>
-<input type="text" id="firstname" name="email" placeholder="Ihre E-Mail">
-
-<label for="firstname">Betreff</label>
-<textarea name="subject" id="subject" placeholder="Ihr Text" style="height: 200px;"></textarea>
-
-<input type="submit" value="senden">
+<nav class="categorie">
+    <ul>
+        <li>
+             <a href="#Fotos">FOTOS</a></li>
+        <li> <a href="#Fotos">PORTRAIT</a></li>
+        <li> <a href="#Fotos">VIDEOS</a></li>
+    </ul>
+</nav>
 
 
-</form>
 
+<!-------TEMPLATE FOTOS----------------------------------------------------------------------->
+<div id="filebox"  class="filebox" style="display:grid; 	grid-template-columns: repeat(5, minmax(0, 1fr));	gap: 5px;">  </div>
+
+
+<template>
+  <h2>Flower</h2>
+  <img src="fotos/domi1.jpg" width="214" height="204">
+  <textarea class="random" placeholder="Ihre Bewertung" style="height: 200px;"></textarea>
+  <button>Abschicken</button>
+</template>
+
+
+<div id="demo">
 
 </div>
+
 
 <!-- Footer-------------------------------------------------------------------------------->
 <footer>
         <a href="#">Impressum</a>
         <a href="#">Kontakt</a>
-        <i class="fa-solid fa-location-dot svg-icons"></i>
-        <p>Location: Austria</p>
         
 </footer>
+<script src="JAVASCRIPT/mywork.js"></script>
 </body>
-<script src="slideshow.js"></script>
 </html>
