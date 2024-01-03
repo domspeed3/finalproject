@@ -164,13 +164,13 @@ margin-top: 20px;
 .svg-para {
     color: white;
 }
-/* SLIDE -------------------------------------------------------------------------------------------*/
+/* Mein Equipment -------------------------------------------------------------------------------------------*/
 
 .myequipment {
     display: flex;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 600px;
+    
     
 }
 .equipment h3 {
@@ -196,9 +196,9 @@ margin-top: 20px;
 
 footer {
     display: flex;
+    justify-content: center;
     text-decoration: none;
     flex-direction: row;
-    padding-left: 500px;
     background-color: rgb(50, 53, 55);
     
     
